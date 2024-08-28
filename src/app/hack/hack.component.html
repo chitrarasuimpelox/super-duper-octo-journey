@@ -1,0 +1,46 @@
+<div>
+    <div class="hole-nav">
+<div class="nav">
+    <div class="title"><img src="assets/images/Group 33072.svg"/></div>
+    <div class="right-nav">
+        <span>Home</span>
+        <span>Product</span>
+        <span>About US</span>
+        <span>Contact US</span>
+    </div>
+</div>
+
+<div class="images">
+<div >
+<img src="assets/images/Group 33103.svg"/>
+</div>
+<div class="nike-tittle">
+    <img src="assets/images/Group 33101.svg"/>
+</div>
+</div>
+<div>
+
+</div>
+</div>
+
+<div class="hole-img">
+    <div *ngFor="let shoe of shoes" class="shoe-img">
+        <img class="img-bac" [src]="shoe.image" />
+        <div class="shoe-desc">
+          <div class="shoe-header">{{ shoe.header }}</div>
+          <div>{{ shoe.description }}</div>
+        </div>
+        <div class="shoe-bot">
+          <div class={{shoe.doller}}>{{ shoe.price }}</div>
+          <div>
+            <img [src]="shoe.icon" />
+          </div>
+        </div>
+      </div>
+
+</div>
+
+
+</div>
+
+
